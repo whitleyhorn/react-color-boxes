@@ -1,0 +1,5 @@
+/* CSS */
+.ColorBoxes {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+}
