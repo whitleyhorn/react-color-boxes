@@ -27,7 +27,12 @@ class ColorBoxes extends Component {
     changeColor(i) {
         const newBoxes = this.state.boxes.map((box, index) => {
             if(index === i) {
-                return this.getRandomColor();
+                let newColor = '';
+                do {
+                    newColor = this.getRandomColor();
+                } while (newColor === box);
+
+                return newColor;
             }
             return box;
         })
