@@ -32,8 +32,7 @@ class ColorBoxes extends Component {
         return <div className="ColorBoxes">
                 {
                     this.state.boxes.map((c, i) => {
-                        // The point of the exercise was to find out that we can't do this without React Events, which we are going to learn about in the next section
-                        return <Box color={c} onClick={this.changeColor.bind(this, i)}/>
+                        return <Box color={c} onClickEvent={this.changeColor.bind(this, i)}/>
                     })
                 }
             </div>;
